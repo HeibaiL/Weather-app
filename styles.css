@@ -11,6 +11,7 @@ header {
   height: 8vh;
   background: #066A82;
   width: 100vw;
+  min-width: 400px;
   padding-top: 1vh;
 }
 header p {
@@ -20,9 +21,15 @@ header p {
   display: flex;
   color: white;
   width: 95vw;
+  min-width: 100px;
   margin: 0 auto;
   justify-content: space-between;
   vertical-align: middle;
+}
+@media only screen and (max-width: 576px) {
+  .bar {
+    width: 300px;
+  }
 }
 .bar .localweather {
   display: inline-flex;
@@ -31,6 +38,11 @@ header p {
   font-size: 30px;
   margin: 5px;
 }
+@media only screen and (max-width: 576px) {
+  .bar .localweather i {
+    font-size: 18px;
+  }
+}
 .bar .localtime {
   padding-top: 4px;
   display: inline-flex;
@@ -38,14 +50,20 @@ header p {
 .bar h3 {
   color: white;
 }
+@media only screen and (max-width: 576px) {
+  .bar h3 {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+}
 .bar span {
   font-weight: bold;
 }
 .main {
   height: 40vh;
-  width: 30vw;
+  width: 35vw;
   position: absolute;
-  margin-left: -15vw;
+  margin-left: -17vw;
   top: 35%;
   left: 50%;
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -53,6 +71,19 @@ header p {
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 1240px) {
+  .main {
+    min-width: 500px;
+    margin-left: -250px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main {
+    min-width: 300px;
+    margin-left: -150px;
+    height: 300px;
+  }
 }
 .main h3 {
   margin: 5px 0 20px 0;
@@ -76,6 +107,11 @@ header p {
   height: 5vh;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
+@media only screen and (max-width: 576px) {
+  .titles {
+    margin-top: 10px;
+  }
+}
 .titles .icontitle {
   display: inline-flex;
 }
@@ -96,9 +132,17 @@ i {
   font-size: 40px;
 }
 .form {
+  width: 30vw;
+  height: 4vh;
   display: flex;
-  width: 27vw;
-  margin: 10px auto;
+  justify-content: space-around;
+  margin: 20px auto;
+  min-width: 21vw;
+}
+@media only screen and (max-width: 1240px) {
+  .form {
+    min-width: 300px;
+  }
 }
 .form button {
   margin-left: 1vh;

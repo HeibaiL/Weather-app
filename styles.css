@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: url("../img/bg2.jpg");
+  background-size: cover;
+}
+header {
+  height: 8vh;
+  background: #066A82;
+  width: 100vw;
+  padding-top: 1vh;
+}
+header p {
+  margin: 0 5px 0 5px;
+}
+.bar {
+  display: flex;
+  color: white;
+  width: 95vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+.bar .localweather {
+  display: inline-flex;
+}
+.bar .localweather i {
+  font-size: 30px;
+  margin: 5px;
+}
+.bar .localtime {
+  padding-top: 4px;
+  display: inline-flex;
+}
+.bar h3 {
+  color: white;
+}
+.bar span {
+  font-weight: bold;
+}
+.main {
+  height: 40vh;
+  width: 30vw;
+  position: absolute;
+  margin-left: -15vw;
+  top: 35%;
+  left: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 40px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.main h3 {
+  margin: 5px 0 20px 0;
+}
+.main .weather {
+  display: flex;
+  height: 20vh;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.main .weather .temparature {
+  font-size: 50px;
+  display: inline-flex;
+}
+.main .weather .temparature i {
+  padding: 3vh 0 0 1vh;
+}
+.titles {
+  width: 100%;
+  height: 5vh;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.titles .icontitle {
+  display: inline-flex;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.wind {
+  display: inline-flex;
+}
+.wind p {
+  margin-right: 1vh;
+}
+.humidity {
+  display: inline-flex;
+}
+i {
+  font-size: 40px;
+}
+.form {
+  display: flex;
+  width: 27vw;
+  margin: 10px auto;
+}
+.form button {
+  margin-left: 1vh;
+}
+.form input {
+  border: 2px solid white;
+  border-radius: 5px;
+}

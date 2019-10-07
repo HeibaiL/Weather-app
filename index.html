@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/4c4cc23b05.js" crossorigin="anonymous"></script>
+    <title>Weather app</title>
+  </head>
+  <body>
+    <header>
+      <nav class="bar">
+        <div class="localweather">
+          <span><i class="far fa-snowflake"></i></span> <h3><span>Local</span>Weather</h3>
+        </div>
+        <div class="localtime">
+          <p class="time">00:00</p><span>|</span><p class="date">05/10/2019</p>
+        </div>
+      </nav>
+    </header>
+    <div class="button">
+      <form class="form">
+        <input class="input" type="text" name="City" value="City">
+        <button type ="submit" class="btn btn-sm btn-primary">Click Me!</button>
+      </form>
+    </div>
+    <div class="main">
+        <h3 class="city">City, Country</h3>
+        <div class="weather">
+          <div class="sky">
+            <i class="fas fa-sun weathericon"></i>
+            <br>
+            <canvas id="canvas" width="50" height="50"></canvas>
+            <p class="weathertext">clear sky</p>
+          </div>
+          <div class="temparature">
+            <p class="tempnum">0</p>
+            <i class="fas fa-thermometer-quarter"></i>
+          </div>
+        </div>
+        <div class="flex titles">
+          <div class="icontitle">
+            <span><i class="fas fa-humidity"></i></span><p>Humidty</p>
+          </div>
+          <div class="icontitle">
+            <span></span><p>Wind Speed</p>
+          </div>
+        </div>
+        <div class="flex">
+            <div class="humidity">
+                <p class="humiditynum">0</p><span>%</span>
+            </div>
+
+            <div class="wind">
+              <p class="windspeed"></p><span>m/s</span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js">
+    </script>
+  </body>
+</html>

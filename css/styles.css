@@ -59,31 +59,23 @@ header p {
 .bar span {
   font-weight: bold;
 }
+.contain{
+  width:100%;
+  margin:0;
+  padding:0;
+  margin-top:20vh;
+
+}
 .main {
   height: 40vh;
   width: 35vw;
-  position: absolute;
-  margin-left: -17vw;
-  top: 35%;
-  left: 50%;
+  min-width:450px;
+  margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 40px;
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
-}
-@media only screen and (max-width: 1240px) {
-  .main {
-    min-width: 500px;
-    margin-left: -250px;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .main {
-    min-width: 300px;
-    margin-left: -150px;
-    height: 300px;
-  }
 }
 .main h3 {
   margin: 5px 0 20px 0;

@@ -6,8 +6,8 @@ const instance = axios.create({
 
 
 export default {
-    get: data => {
-        const newUrl = instance.defaults.baseURL + data;
+    get: params => {
+        const newUrl = instance.defaults.baseURL + params;
         return instance.get(newUrl)
     }
 }
